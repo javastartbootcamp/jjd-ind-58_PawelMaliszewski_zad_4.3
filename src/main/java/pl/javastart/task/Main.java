@@ -8,17 +8,25 @@ public class Main {
         Triangle triangle = new Triangle(9, 5, 5.9);
         Rectangle rectangle = new Rectangle(8, 9.3);
 
-        ShapeCalculator shapeCalculator = new ShapeCalculator();
-        System.out.println("Obwód kwadratu = " + shapeCalculator.calculateSquarePerimeter(square));
-        System.out.println("Pole kwadratu = " + shapeCalculator.calculateSquareArea(square));
+        double squarePerimeter = square.calculateSquarePerimeter();
+        double squareArea = square.calculateSquareArea();
+        double circlePerimeter = circle.calculateCirclePerimeter();
+        double circleArea = circle.calculateCircleArea();
+        double trianglePerimeter = triangle.calculateTrianglePerimeter();
+        double triangleArea = triangle.calculateTriangleArea();
+        double rectPerimeter = rectangle.calculateRectPerimeter();
+        double rectArea = rectangle.calculateRectArea();
+
+        System.out.println("Obwód kwadratu = " + squarePerimeter);
+        System.out.println("Pole kwadratu = " + squareArea);
         System.out.println("----------------------------------------");
-        System.out.println("Obwód koła = " + shapeCalculator.calculateCirclePerimeter(circle));
-        System.out.println("Pole koła = " + shapeCalculator.calculateCircleArea(circle));
+        System.out.println("Obwód koła = " + circlePerimeter);
+        System.out.println("Pole koła = " + circleArea);
         System.out.println("----------------------------------------");
-        System.out.println("Obwód trójkąta = " + shapeCalculator.calculateTrianglePerimeter(triangle));
-        System.out.println("Pole trójkąta = " + shapeCalculator.calculateTriangleArea(triangle));
+        System.out.println("Obwód trójkąta = " + trianglePerimeter);
+        System.out.println("Pole trójkąta = " + triangleArea);
         System.out.println("----------------------------------------");
-        System.out.println("Obwód prostokąta  = " + shapeCalculator.calculateRectPerimeter(rectangle));
-        System.out.println("Pole prostokąta  = " + shapeCalculator.calculateRectArea(rectangle));
+        System.out.println("Obwód prostokąta  = " + rectPerimeter);
+        System.out.println("Pole prostokąta  = " + rectArea);
     }
 }

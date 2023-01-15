@@ -14,4 +14,12 @@ public class Square {
     public void setA(double a) {
         this.a = a;
     }
+
+    public double calculateSquareArea() {
+        return a * a;
+    }
+
+    public double calculateSquarePerimeter() {
+        return 4 *  a;
+    }
 }

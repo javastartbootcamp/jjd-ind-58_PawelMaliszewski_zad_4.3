@@ -34,4 +34,13 @@ public class Triangle {
     public void setC(double c) {
         this.c = c;
     }
+
+    public double calculateTriangleArea() {
+        double p = (a + b + c) / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    }
+
+    public double calculateTrianglePerimeter() {
+        return a + b + c;
+    }
 }
