@@ -1,6 +1,5 @@
 package pl.javastart.task;
 
-@SuppressWarnings("checkstyle:RightCurly")
 public class ShapeCalculator {
 
     double calculateSquareArea(Square square) {
